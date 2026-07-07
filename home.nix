@@ -21,6 +21,9 @@ in
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
+  home.sessionPath = [
+    "/Users/${user}/.local/bin"
+  ];
 
   programs.zsh = {
     enable = true;
@@ -37,6 +40,14 @@ in
       m = "git switch main";
       cc = "claude --dangerously-skip-permissions";
       co = "codex --full-auto";
+    };
+  };
+
+  programs.git = {
+    enable = true;
+    settings.user = {
+      name = "Giang Dao";
+      email = "gdao.research@gmail.com";
     };
   };
 

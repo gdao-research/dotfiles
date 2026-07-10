@@ -39,6 +39,7 @@ in
       pull = "git pull";
       m = "git switch main";
       cc = "claude --dangerously-skip-permissions";
+      agyd = "agy --dangerously-skip-permissions";
       co = "codex --full-auto";
     };
   };
